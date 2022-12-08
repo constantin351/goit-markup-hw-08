@@ -1,0 +1,228 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $secondary-background-color;
+}
+
+
+.footer__wrapper {
+    display: flex;
+    
+    @media screen and (max-width: 767px) {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        align-items: baseline;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        align-items: baseline;
+        text-align: left;
+    }
+}
+
+
+.footer__logo-address {
+    display: inline-block;
+
+    @media screen and (max-width: 767px) {
+        margin: 0 0 60px 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin: 0 165px 0 76px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin: 0 93px 0 0;
+    }
+}
+
+
+.footer__logo {
+    color: $white-color;
+    margin-bottom: 20px;
+    display: inline-block;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
+
+
+// FOOTER post address, email, tel (LINKS)
+.footer__address-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    font-style: normal;
+    transition: color 250ms $transition-timing-function;
+    
+    &:hover, &:focus {
+        color: $accent-color;
+    }
+
+    @media screen and (max-width: 767px) {
+        display: inline-block;
+    }
+    
+    @media screen and (min-width: 768px) {
+        display: inline-block;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
+
+.footer__link-address {
+    color: $white-color;
+}
+
+.footer__link-email,
+.footer__link-phone {
+    color: $footer-email-phone-color;
+}
+
+.footer__address-item:not(:last-child) {
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 8px;
+        }
+    
+    @media screen and (min-width: 1199px) {
+        margin-bottom: 9px;
+            }
+}
+
+// FOOTER JOIN US - social links svg-icons
+.footer__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white-color;
+    margin-bottom: 20px;
+}
+
+.footer__join-us {
+    @media screen and (max-width: 767px) {
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        margin-bottom: 60px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        flex-direction: column;
+        margin-bottom: 102px;
+    }
+}
+
+
+.footer__social-icon-list {
+    display: flex;
+}
+
+
+.footer__social-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: $white-color;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms $transition-timing-function;
+
+    &:hover, &:focus {
+        background-color: $accent-color;
+    }
+}
+
+
+.footer__social-icon-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+// FOOTER signup FORM
+.footer__signup {
+    @media screen and (max-width: 1199px) {
+        margin: auto;
+        width: 100%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+    }
+}
+
+
+.footer__signup-form {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }    
+}
+
+
+.footer__signup-input {
+    // width: 358px;
+    // margin: 0 12px 0 0;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding: 15px 16px;
+    font-family: inherit;
+    background: $secondary-background-color;
+    color: $white-color;
+
+    @media screen and (max-width: 1199px) {
+        margin: 0 0 20px;
+        width: 100%;
+        max-width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin: 0 12px 0 0;
+        width: 358px;
+    }
+}
+
+
+.footer__signup-input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+.footer__signup-button {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        background-color: $blue-hover-focus-active-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+    @media screen and (max-width: 1199px) {
+        margin: auto;
+    }
+}
+
+.footer__signup-icon {
+    margin-left: 10px;
+}

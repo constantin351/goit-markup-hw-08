@@ -1,0 +1,25 @@
+// убирает маркеры списков
+.nav__list,
+.page-header__contact-list,
+.section-features__list,
+.section-activity__list,
+.section-team__list,
+.footer__address-list,
+.section-portfolio__filter-button,
+.section-portfolio__list,
+.section-clients__list-icons,
+.section-team__card-icon-list,
+.footer__social-icon-list {
+    list-style: none;
+}
+
+// обнуляет margin top & bottom
+h1,
+h2,
+h3,
+ul,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0px;
+}
