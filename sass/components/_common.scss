@@ -1,3 +1,4 @@
+
 .page-header,
 .main-portfolio,
 .section-portfolio,
@@ -6,28 +7,43 @@
     background-color: $primary-background-color;
 }
 
+
 img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
+
 // PADDINGs
-.section-features,
+.section-features {
+    @media screen and (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 0;
+    }
+}
+
+
 .section-portfolio,
 .section-team,
 .section-clients,
 .section-activity {
-    // padding: 94px 0;
-
     @media screen and (max-width: 1199px) {
-        padding: 60px 0;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
     
     @media screen and (min-width: 1200px) {
-        padding: 94px 0;
+        padding-top: 94px;
+        padding-bottom: 94px;
     }
 }
+
 
 // BUTTON common styles
 .button {
@@ -44,6 +60,7 @@ img {
     transition: background-color 250ms $transition-timing-function,
         box-shadow 250ms $transition-timing-function;
 }
+
 
 // BODY
 body {

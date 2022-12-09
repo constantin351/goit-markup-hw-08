@@ -51,7 +51,7 @@
     letter-spacing: 0.02em;
 
     @media screen and (max-width: 767px) {
-        margin-bottom: 302px;
+        margin-bottom: 160px;
     }
 
     @media screen and (min-width: 768px) {
@@ -83,8 +83,7 @@
     }
 }
 
-// .nav__link:hover,
-// .nav__link:focus,
+
 .nav__link-studio,
 .nav__link-portfolio {
     color: $accent-color;
@@ -151,13 +150,15 @@
     }
 
     @media screen and (min-width: 768px) {
-        margin: auto;
+        // margin: auto;
+        padding: 16px 0;
         margin-left: 87px;
         text-align: left
     }
 
     @media screen and (min-width: 1200px) {
         display: flex;
+        align-items: center;
         margin-left: 310px;
     }
 }
@@ -191,15 +192,15 @@
     }
 
     @media screen and (max-width: 767px) {
-        &[href="mailto:info@devstudio.com"] {
-        font-size: 24px;
-        line-height: 1.17;
+            &[href="mailto:info@devstudio.com"] {
+            font-size: 24px;
+            line-height: 1.17;
         }
 
         &[href="tel:+380961111111"] {
-        font-size: 34px;
-        line-height: 1.18;
-        color: $accent-color;
+            font-size: 34px;
+            line-height: 1.18;
+            color: $accent-color;
         }
     }
     
@@ -238,7 +239,6 @@
 // mobile burger-menu
 .menu-button {
     position: absolute;
-
     z-index: 999;
 
     top: 10px;
@@ -259,9 +259,17 @@
 
 .menu-button .icon-cross {
     display: none;
-    cursor: pointer;
-
+    
     &:hover, &:focus {
+        fill: $accent-color;
+        color: $accent-color;
+    }
+}
+
+
+.menu-button .icon-menu {
+    &:hover,
+    &:focus {
         fill: $accent-color;
         color: $accent-color;
     }
@@ -285,21 +293,20 @@
     @media screen and (max-width: 767px) {
         display: none;
         position: absolute;
+        z-index: 1;
         top: 0;
         left: 0;
         width: 100%;
 
-        max-width: 767px;
-        max-height: 796px;
+        // max-width: 767px;
+        // max-height: 796px;
         
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
         padding: 48px 40px;
         
-        // display: block;
-
-       &.is-open {
-        display: block;
-    }
+        &.is-open {
+            display: block;
+        }
     }
 
     @media screen and (min-width: 768px) {

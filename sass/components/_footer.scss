@@ -48,10 +48,6 @@
     color: $white-color;
     margin-bottom: 20px;
     display: inline-block;
-
-    @media screen and (min-width: 1200px) {
-        display: flex;
-    }
 }
 
 
@@ -76,30 +72,30 @@
     @media screen and (min-width: 768px) {
         display: inline-block;
     }
-    
-    @media screen and (min-width: 1200px) {
-        display: flex;
-    }
 }
+
 
 .footer__link-address {
     color: $white-color;
 }
+
 
 .footer__link-email,
 .footer__link-phone {
     color: $footer-email-phone-color;
 }
 
+
 .footer__address-item:not(:last-child) {
     @media screen and (max-width: 1199px) {
         margin-bottom: 8px;
-        }
+    }
     
     @media screen and (min-width: 1199px) {
         margin-bottom: 9px;
-            }
+    }
 }
+
 
 // FOOTER JOIN US - social links svg-icons
 .footer__title {
@@ -111,6 +107,7 @@
     color: $white-color;
     margin-bottom: 20px;
 }
+
 
 .footer__join-us {
     @media screen and (max-width: 767px) {
@@ -133,9 +130,11 @@
 
 
 .footer__social-icon-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include flexCentered;
+
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -210,9 +209,10 @@
 .footer__signup-button {
     width: 200px;
     height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include flexCentered;
 
     &:hover {
         background-color: $blue-hover-focus-active-color;
@@ -222,6 +222,7 @@
         margin: auto;
     }
 }
+
 
 .footer__signup-icon {
     margin-left: 10px;

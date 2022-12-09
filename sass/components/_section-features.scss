@@ -22,27 +22,28 @@
 
 // SVG-icons section FEATURES
 .section-features__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include flexCentered;
     background: $team-background-color;
     margin-bottom: 30px;
     border-radius: 4px;
 
     @media screen and (max-width: 767px) {
-            max-width: 450px;
-            height: 120px;
-        }
+        max-width: 450px;
+        height: 120px;
+    }
     
-        @media screen and (min-width: 768px) {
-            width: 354px;
-            height: 120px;
-        }
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 120px;
+    }
     
-        @media screen and (min-width: 1200px) {
-            width: 270px;
-            height: 120px;
-        }
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        height: 120px;
+    }
 }
 
 
@@ -50,7 +51,8 @@
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        margin: -15px;
+        // margin: -15px;
+        gap: 30px;
     }
 }
 
@@ -61,13 +63,13 @@
     }
     
     @media screen and (min-width: 768px) {
-        width: calc((100% - 4 * 15px) / 2);
-        margin: 15px;
+        width: calc((100% - 1 * 30px) / 2);
+        // margin: 15px;
     }
     
     @media screen and (min-width: 1200px) {
-        width: calc((100% - 8 * 15px) / 4);
-        margin: 15px;
+        width: calc((100% - 3 * 30px) / 4);
+        // margin: 15px;
     }
 
     &:not(:last-child) {
